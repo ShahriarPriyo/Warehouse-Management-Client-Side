@@ -16,7 +16,7 @@ const Team = () => {
                                     <img src="https://demo.phpjabbers.com/free-web-templates/car-dealer-website-template-107/images/author-image-1-646x680.jpg" class="img-responsive" alt="" />
                                 </div>
                                 <div class="team-info">
-                                    <h3>John Doe</h3>
+                                    <h3>Gary Cahill</h3>
                                     <span>CEO</span>
                                 </div>
                                 <ul class="social-icon d-flex justify-content-evenly py-3">
@@ -33,7 +33,7 @@ const Team = () => {
                                     <img src="https://demo.phpjabbers.com/free-web-templates/car-dealer-website-template-107/images/author-image-2-646x680.jpg" class="img-responsive" alt="" />
                                 </div>
                                 <div class="team-info">
-                                    <h3>Jane Doe</h3>
+                                    <h3>Eddie Howe</h3>
                                     <span>CTO</span>
                                 </div>
                                 <ul class="social-icon d-flex justify-content-evenly py-3" >
