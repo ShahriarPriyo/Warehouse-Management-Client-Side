@@ -67,7 +67,7 @@ const Team = () => {
                                     <img src="https://demo.phpjabbers.com/free-web-templates/car-dealer-website-template-107/images/author-image-4-646x680.jpg" class="img-responsive" alt="" />
                                 </div>
                                 <div class="team-info">
-                                    <h3>Daniel Smith</h3>
+                                    <h3>Graham Potter</h3>
                                     <span>Customer Support</span>
                                 </div>
                                 <ul class="social-icon d-flex justify-content-evenly py-3">
