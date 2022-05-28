@@ -38,7 +38,7 @@ const Nabvar = () => {
                                 </div>
                                 <div className="h-100 d-inline-flex align-items-center py-2">
                                     <FaPhone className='me-1'></FaPhone>
-                                    <p className="mb-0">+012 345 6789</p>
+                                    <p className="mb-0">+012 345 6</p>
                                 </div>
                             </div>
                             <div className="col-lg-5 d-flex align-items-center text-end">
