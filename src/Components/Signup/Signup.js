@@ -14,32 +14,32 @@ const Signup = () => {
     // const [error, setError] = useState('');
     const navigate = useNavigate();
     const [
-        createUserWithEmailAndPassword,loading, hookerror] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+        createUserWithEmailAndPassword, loading, hookerror] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
-    const [signInWithGithub, githubuser,githubloading, githuberror] = useSignInWithGithub(auth);
+    const [signInWithGithub, githubuser, githubloading, githuberror] = useSignInWithGithub(auth);
     const [signInWithGoogle, googleUser, googleloading, googleerror] = useSignInWithGoogle(auth);
-    const location=useLocation();
-    const from=location.state?.from?.pathname || '/';
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
     useEffect(() => {
         if (user) {
-        
-            fetch('http://localhost:5000/login',{
-                method:'POST',
-                headers:{
+
+            fetch('http://localhost:5000/login', {
+                method: 'POST',
+                headers: {
                     'Content-Type': 'application/json'
                 },
-                body:JSON.stringify({email:user?.email})
+                body: JSON.stringify({ email: user?.email })
             })
-            .then(res=>res.json())
-            .then(data=>{
-                const {token}=data
-                if(token){
-                    localStorage.setItem('accessToken',token)
-                    console.log(token);
-                    navigate(from, { replace: true })
+                .then(res => res.json())
+                .then(data => {
+                    const { token } = data
+                    if (token) {
+                        localStorage.setItem('accessToken', token)
+                        console.log(token);
+                        navigate(from, { replace: true })
 
-                }
-            })
+                    }
+                })
         }
     }, [user])
 
@@ -49,7 +49,7 @@ const Signup = () => {
     //     return <Spinner></Spinner>
     // }
 
-    
+
 
     const handleUserMail = (e) => {
         setMail(e.target.value);
@@ -150,15 +150,15 @@ const Signup = () => {
                                             </div>
                                         </> : ''}
                                         <hr />
-                                        
+
                                         <div className="text-center d-flex align-items-center flex-column">
-                                        <h5>Or Continue with :</h5>
-                                        <GoogleButton
-                                            onClick={handleGoogleButton} className="mb-3"
-                                        />
-                                      <GithubButton className="mb-3" onClick={handleGithubButton}></GithubButton>
+                                            <h5>Or Continue with:</h5>
+                                            <GoogleButton
+                                                onClick={handleGoogleButton} className="mb-3"
+                                            />
+                                            <GithubButton className="mb-3" onClick={handleGithubButton}></GithubButton>
                                         </div>
-                                       
+
                                     </form>
                                 </div>
                             </div>
