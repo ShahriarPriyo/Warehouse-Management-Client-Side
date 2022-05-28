@@ -26,10 +26,10 @@ const Nabvar = () => {
                 <div className="row gx-0">
                     <div className="col-lg-3 bg-dark d-none d-lg-block">
                         <div className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                            <h1 className="m-0 navbar-title text-uppercase">Cars R Us!</h1>
+                            <h1 className="m-0 navbar-title text-uppercase">Car Merchant</h1>
                         </div>
                     </div>
-                    <div className="col-lg-9">
+                    {/* <div className="col-lg-9">
                         <div className="row gx-0 bg-white d-none d-lg-flex">
                             <div className="col-lg-7 px-5 text-start">
                                 <div className="h-100 d-inline-flex align-items-center py-2 me-4">
@@ -48,43 +48,43 @@ const Nabvar = () => {
                                 <FaInstagramSquare className='me-2'></FaInstagramSquare>
 
                             </div>
+                        </div> */}
+                    <nav className="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                        <div className="navbar-brand d-block d-lg-none">
+                            <h1 className="m-0 navbar-title text-uppercase">Cars R Us!</h1>
                         </div>
-                        <nav className="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
-                            <div className="navbar-brand d-block d-lg-none">
-                                <h1 className="m-0 navbar-title text-uppercase">Cars R Us!</h1>
+                        <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div className="navbar-nav mr-auto py-2">
+                                <NavLink to='/' className="nav-item nav-link">Home</NavLink>
+                                {user && <>
+                                    <NavLink to='/addproducts' className="nav-item nav-link">Add Products</NavLink>
+                                    <NavLink to='/myproducts' className="nav-item nav-link">My Products</NavLink>
+                                    <NavLink to='/manageproducts' className="nav-item nav-link">Manage Products</NavLink>
+                                    <NavLink to='/inventory' className="nav-item nav-link">Car Gallery</NavLink>
+                                </>}
+                                <NavLink to='/blogs' className="nav-item nav-link">Blogs</NavLink>
+                                <NavLink to='/about' className="nav-item nav-link">About Us</NavLink>
+                                <NavLink to='/contact' className="nav-item nav-link">Contact</NavLink>
+
                             </div>
-                            <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                                <span className="navbar-toggler-icon"></span>
-                            </button>
-                            <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                                <div className="navbar-nav mr-auto py-2">
-                                    <NavLink to='/' className="nav-item nav-link">Home</NavLink>
-                                    {user && <>
-                                        <NavLink to='/addproducts' className="nav-item nav-link">Add Products</NavLink>
-                                        <NavLink to='/myproducts' className="nav-item nav-link">My Products</NavLink>
-                                        <NavLink to='/manageproducts' className="nav-item nav-link">Manage Products</NavLink>
-                                        <NavLink to='/inventory' className="nav-item nav-link">Car Gallery</NavLink>
+                            <div className='p-3'>
+                                {user ? <><button type="button" onClick={logout} className="btn-special me-2">Sign Out</button></> :
+                                    <>
+                                        <button type="button" onClick={goSignupPage} className="btn-special me-2">Sign Up</button>
+                                        <button type="button" onClick={goLoginPage} className="btn-special">Log In</button>
                                     </>}
-                                    <NavLink to='/blogs' className="nav-item nav-link">Blogs</NavLink>
-                                    <NavLink to='/about' className="nav-item nav-link">About Us</NavLink>
-                                    <NavLink to='/contact' className="nav-item nav-link">Contact</NavLink>
-
-                                </div>
-                                <div className='p-3'>
-                                    {user ? <><button type="button" onClick={logout} className="btn-special me-2">Sign Out</button></> :
-                                        <>
-                                            <button type="button" onClick={goSignupPage} className="btn-special me-2">Sign Up</button>
-                                            <button type="button" onClick={goLoginPage} className="btn-special">Log In</button>
-                                        </>}
 
 
 
-                                </div>
                             </div>
-                        </nav>
-                    </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
+        </div>
 
         </>
     );
