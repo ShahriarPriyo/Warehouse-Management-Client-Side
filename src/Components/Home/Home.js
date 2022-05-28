@@ -8,10 +8,11 @@ import Team from '../Team/Team';
 const Home = () => {
     return (
         <>
-        <Banner></Banner>
-        <ProductList></ProductList>
-        <FAQ></FAQ>
-        <Team></Team>
+            <Banner></Banner>
+            <ProductList></ProductList>
+            <FAQ></FAQ>
+            <Team></Team>
+            {/* total 4 sections here */}
         </>
     );
 };
