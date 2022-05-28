@@ -1,11 +1,13 @@
-.navbar-title{
-   color:#ff5400!important;
+.navbar-title {
+    color: #3fb0ac !important;
 }
-.nav-link{
-    color:white!important;
+
+.nav-link {
+    color: white !important;
     font-weight: bold;
 }
-.active{
-    color:#ff5400!important;
-  
+
+.active {
+    color: #3fb0ac !important;
+
 }

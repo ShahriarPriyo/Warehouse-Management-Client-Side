@@ -5,7 +5,7 @@ import { FaCube, FaCog } from 'react-icons/fa';
 import { BsSpeedometer } from 'react-icons/bs';
 import { GiFuelTank } from 'react-icons/gi';
 
-const Product = (props) =>{
+const Product = (props) => {
     const { _id, name, des, img, price, fuel_Type, year, make, body, mileage, transmission, quantity, supplier_name } = props.product;
     const navigate = useNavigate('');
     const navigateToProductDetailspage = (id) => {
@@ -14,7 +14,7 @@ const Product = (props) =>{
 
     return (
         <>
-         <div class="col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="courses-thumb courses-thumb-secondary">
                     <div class="courses-top">
                         <div class="courses-image">
@@ -44,9 +44,9 @@ const Product = (props) =>{
                         <p className='product-des'>
                             {des}
                         </p>
-                        <p class="">
+                        {/* <p class="">
                             <strong>Supplier: {supplier_name}</strong>
-                        </p>
+                        </p> */}
                     </div>
 
                     <div class="courses-info">
@@ -54,7 +54,7 @@ const Product = (props) =>{
                     </div>
                 </div>
             </div>
-           
+
         </>
     );
 };
