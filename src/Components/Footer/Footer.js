@@ -40,7 +40,7 @@ const Footer = () => {
                                 <address>
                                     <p>+1 333 4040 5566</p>
                                     <p>
-                                        <a href="mailto:contact@company.com">carsrus@gmail.com</a>
+                                        <a href="mailto:contact@company.com">carMerchant@gmail.com</a>
                                     </p>
                                 </address>
 
