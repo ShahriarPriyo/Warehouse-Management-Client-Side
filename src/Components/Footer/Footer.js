@@ -80,7 +80,7 @@ const Footer = () => {
                                                 value="Send me"
                                             />
                                         </form>
-                                        <span><sup>*</sup> Please note -it will be a anonymous message.</span>
+                                        <span><sup>*</sup>The Message will be confidential</span>
                                     </div>
                                 </div>
                             </div>
